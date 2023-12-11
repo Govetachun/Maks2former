@@ -1,0 +1,20 @@
+/space/hotel/bachn/miniconda3/envs/m2f/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3190.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Traceback (most recent call last):
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/main.py", line 131, in <module>
+    train_ade200k()
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/main.py", line 87, in train_ade200k
+    seg_model.train(train_sampler, loader_train, loader_eval, cfg.TRAIN.EPOCH)
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/maskformer_train.py", line 170, in train
+    train_loss = self.train_epoch(data_loader, epoch)
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/maskformer_train.py", line 204, in train_epoch
+    losses = self.criterion(outputs, targets)
+  File "/space/hotel/bachn/miniconda3/envs/m2f/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/utils/criterion.py", line 242, in forward
+    targets = self._get_targets(gt_masks)
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/utils/criterion.py", line 272, in _get_targets
+    binary_masks = self._get_binary_mask(mask)
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/utils/criterion.py", line 224, in _get_binary_mask
+    target_onehot = target_onehot.scatter(dim=0, index=target.unsqueeze(0), value=1)
+RuntimeError: index 149 is out of bounds for dimension 0 with size 25

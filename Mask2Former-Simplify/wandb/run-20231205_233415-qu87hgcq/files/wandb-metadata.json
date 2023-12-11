@@ -1,0 +1,214 @@
+{
+    "os": "Linux-5.10.0-21-amd64-x86_64-with-glibc2.31",
+    "python": "3.9.18",
+    "heartbeatAt": "2023-12-06T07:34:15.775534",
+    "startedAt": "2023-12-06T07:34:15.062456",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--local_rank=0"
+    ],
+    "state": "running",
+    "program": "/space/hotel/bachn/implement_model/Mask2Former-Simplify/main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/zzubqh/Mask2Former-Simplify",
+        "commit": "e02fa02120a27003bd85136258f646b8f94ae44c"
+    },
+    "email": null,
+    "root": "/space/hotel/bachn/implement_model/Mask2Former-Simplify",
+    "host": "i2x256-ai03",
+    "username": "bachn",
+    "executable": "/space/hotel/bachn/miniconda3/envs/m2f/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 1657.6501249999997,
+        "min": 800.0,
+        "max": 3000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2624.737,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 800.214,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 800.229,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1884.454,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 800.307,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 800.103,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 800.211,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1740.607,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2100.345,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1800.502,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1443.429,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2123.511,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2099.699,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2558.611,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1402.892,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2733.075,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2100.628,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 800.171,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 800.323,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1212.231,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 800.248,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 800.138,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 800.203,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1685.237,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2100.283,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1800.323,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 1394.514,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2172.818,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2100.004,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2363.547,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2037.031,
+            "min": 800.0,
+            "max": 3000.0
+        },
+        {
+            "current": 2739.58,
+            "min": 800.0,
+            "max": 3000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 115.87076568603516,
+            "used": 31.137054443359375
+        }
+    },
+    "gpu": "NVIDIA RTX A6000",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA RTX A6000",
+            "memory_total": 51527024640
+        },
+        {
+            "name": "NVIDIA RTX A6000",
+            "memory_total": 51527024640
+        }
+    ],
+    "memory": {
+        "total": 251.5575180053711
+    }
+}

@@ -1,0 +1,26 @@
+/space/hotel/bachn/miniconda3/envs/m2f/lib/python3.9/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3190.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Traceback (most recent call last):
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/main.py", line 132, in <module>
+    train_ade200k()
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/main.py", line 88, in train_ade200k
+    seg_model.train(train_sampler, loader_train, loader_eval, cfg.TRAIN.EPOCH)
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/maskformer_train.py", line 170, in train
+    train_loss = self.train_epoch(data_loader, epoch)
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/maskformer_train.py", line 204, in train_epoch
+    losses = self.criterion(outputs, targets)
+  File "/space/hotel/bachn/miniconda3/envs/m2f/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/utils/criterion.py", line 249, in forward
+    indices = self.matcher(outputs_without_aux, targets)
+  File "/space/hotel/bachn/miniconda3/envs/m2f/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/space/hotel/bachn/miniconda3/envs/m2f/lib/python3.9/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/utils/matcher.py", line 207, in forward
+    return self.memory_efficient_forward(outputs, targets)
+  File "/space/hotel/bachn/miniconda3/envs/m2f/lib/python3.9/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/utils/matcher.py", line 179, in memory_efficient_forward
+    indices.append(linear_sum_assignment(C))
+ValueError: matrix contains invalid numeric entries

@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/main.py", line 131, in <module>
+    train_ade200k()
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/main.py", line 87, in train_ade200k
+    seg_model.train(train_sampler, loader_train, loader_eval, cfg.TRAIN.EPOCH)
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/maskformer_train.py", line 170, in train
+    train_loss = self.train_epoch(data_loader, epoch)
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/maskformer_train.py", line 199, in train_epoch
+    for i, batch in enumerate(data_loader):
+  File "/space/hotel/bachn/miniconda3/envs/m2f/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 628, in __next__
+    data = self._next_data()
+  File "/space/hotel/bachn/miniconda3/envs/m2f/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1333, in _next_data
+    return self._process_data(data)
+  File "/space/hotel/bachn/miniconda3/envs/m2f/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1359, in _process_data
+    data.reraise()
+  File "/space/hotel/bachn/miniconda3/envs/m2f/lib/python3.9/site-packages/torch/_utils.py", line 543, in reraise
+    raise exception
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/space/hotel/bachn/miniconda3/envs/m2f/lib/python3.9/site-packages/torch/utils/data/_utils/worker.py", line 302, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/space/hotel/bachn/miniconda3/envs/m2f/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 61, in fetch
+    return self.collate_fn(data)
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/dataset/dataset.py", line 192, in collate_fn
+    batch_width, batch_height = self.get_batch_size(batch)
+  File "/space/hotel/bachn/implement_model/Mask2Former-Simplify/dataset/dataset.py", line 158, in get_batch_size
+    self.imgMaxSize / max(img_height, img_width))
+TypeError: unsupported operand type(s) for /: 'list' and 'int'
